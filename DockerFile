@@ -1,0 +1,12 @@
+FROM node
+
+WORKDIR /srv/url-shortener-node
+
+COPY . .
+
+RUN npm install
+
+ENV MONGODB_URI="mongodb//mongo-urlshortener/url-shortener"
+ENV REDIS_URI="redis-urlshortener"
+
+ENTRYPOINT ["node","index.js"]

@@ -1,0 +1,16 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore npm debug log
+npm-debug.log
+
+# Ignore any local development configuration files
+config/*.json
+
+# Ignore editor-specific files
+*.swp
+.DS_Store
+
+# Ignore version control directories
+.git
+.svn
